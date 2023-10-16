@@ -7,33 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-<script>
-        class Student {
-  constructor(id, fname, lname, major, year, dateOfBirth) {
-    this.id = id;
-    this.fname = fname;
-    this.lname = lname;
-    this.major = major;
-    this.year = year;
-this.dateOfBirth = dateOfBirth;
-  }
+    <div class="clock">
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+    
 
-  age() {
-    const currentYear = new Date().getFullYear();
-    const birthYear = new Date(this.dateOfBirth).getFullYear();
-    return currentYear - birthYear;
-  }
-}
 
-// Creating multiple student instances
-const student1 = new Student(1, "John", "Doe", "Computer Science", 2023, "1999-05-15");
-const student2 = new Student(2, "Alice", "Smith", "Engineering", 2024, "2000-02-20");
-const student3 = new Student(3, "Eva", "Johnson", "Mathematics", 2022, "1998-11-10");
 
-// Example usage of the age() method
-console.log(student1.fname + "'s age is " + student1.age() + " years.");
-console.log(student2.fname + "'s age is " + student2.age() + " years.");
-console.log(student3.fname + "'s age is " + student3.age() + " years.");
-</script>
+
+    <script src="/assets/js/time.js"></script>
 </body>
 </html>
